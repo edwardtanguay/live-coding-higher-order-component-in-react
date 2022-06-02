@@ -6,8 +6,8 @@ import { PageAbout } from './pages/PageAbout';
 import { withLoadedBooks } from './hocs/withLoadedBooks';
 import { NavLink, Routes, Route, Navigate } from 'react-router-dom';
 
-const PageTechBooksWithLoadedBooks = withLoadedBooks(PageTechBooks);
-const PageGeneralBooksWithLoadedBooks = withLoadedBooks(PageGeneralBooks);
+const PageTechBooksWithLoadedBooks = withLoadedBooks(PageTechBooks, "The best web dev books of our time");
+const PageGeneralBooksWithLoadedBooks = withLoadedBooks(PageGeneralBooks, "Deep reading about society and culture");
 const PageAboutWithLoadedBooks = withLoadedBooks(PageAbout);
 
 function App() {
