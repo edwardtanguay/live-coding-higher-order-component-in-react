@@ -12,6 +12,7 @@ const PageGeneralBooksWithLoadedBooks = withLoadedBooks(PageGeneralBooks, "Deep 
 const PageAboutWithLoadedBooks = withLoadedBooks(PageAbout);
 
 const PageTechBooksFinal = withQuoteOfTheDay(PageTechBooksWithLoadedBooks);
+const PageGeneralBooksFinal = withQuoteOfTheDay(PageGeneralBooksWithLoadedBooks);
 
 function App() {
 	return (
@@ -26,7 +27,7 @@ function App() {
 			<Routes>
 				<Route path="/welcome" element={<PageWelcome />} />
 				<Route path="/tech-books" element={<PageTechBooksFinal />} />
-				<Route path="/general-books" element={<PageGeneralBooksWithLoadedBooks />} />
+				<Route path="/general-books" element={<PageGeneralBooksFinal />} />
 				<Route path="/about" element={<PageAboutWithLoadedBooks />} />
 				<Route path="/" element={<Navigate to="/welcome" replace />}/>
 			</Routes>
