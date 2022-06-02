@@ -1,8 +1,8 @@
-export const PageGeneralBooks = () => {
+export const PageGeneralBooks = ({generalBooks}) => {
 	return (
 		<div className="page_generalBooks">
 			<h2>General Books</h2>
-			<p>This is the general book page.</p>
+			<p>Here are the {generalBooks.length} general books:</p>
 		</div>
 	)
 }
